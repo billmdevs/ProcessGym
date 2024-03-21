@@ -46,7 +46,7 @@ def main():
         print("Episode: {}, rewards: {}, time: {}".format(episode, reward_sum, time.time() - start_time), end="\n")
         rewards.append(reward_sum)
 
-    print("reward: {}".format(sum(rewards)/len(rewards)))
+    print("Average reward: {}".format(sum(rewards)/len(rewards)))
 
 
 if __name__ == '__main__':

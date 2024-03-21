@@ -296,7 +296,7 @@ def main():
 
     save_model(best_score_model, model, results)
 
-    print("Whole process took: {}", time.time() - start_time_all)
+    print("Whole process took: {} seconds".format(time.time() - start_time_all))
 
 def save_model(best_score_model, last_model, parameters_dict):
     path = "results_" + datetime.now().strftime("%Y%m%d_%H_%M")
